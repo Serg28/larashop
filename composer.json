@@ -1,0 +1,27 @@
+{
+    "name": "sergeytelniy/larashop",
+    "description": "E-commerce package for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Telniy",
+            "email": "tsv.srt.com@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Telniy\\Larashop\\" : "src/"
+        }
+    },
+    "extra" : {
+        "laravel": {
+            "providers": [
+                "Telniy\\Larashop\\LarashopServiceProvider"
+            ],
+            "aliases": {
+                "Larashop" : "Telniy\\Larashop\\Larashop"
+            }
+        }
+    }
+}
